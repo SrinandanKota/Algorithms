@@ -69,9 +69,10 @@ w.crawl();
 
 This program will start crawling with /wiki/Iowa State University as the root page. It will collect the first 100 pages that contain
 both the words \Iowa State" and "Cyclones" that are visited by a BFS algorithm. Determines the graph (links among the those 100 pages)
-and writes the graph to a (text) file named WikiISU.txt. This filele will contain all edges of the graph. Each line of this file should
+and writes the graph to a (text) file named WikiISU.txt. This file will contain all edges of the graph. Each line of this file should
 have one directed edge, except the first line. The first line of the graph should indicate number of vertices which will be 100. Below 
 is sample contents of the file
+
 100
 /wiki/Iowa_State_University /wiki/Flagship
 /wiki/Iowa_State_University /wiki/Land-grant_university
