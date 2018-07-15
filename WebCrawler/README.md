@@ -74,21 +74,37 @@ have one directed edge, except the first line. The first line of the graph shoul
 is sample contents of the file
 
 100
+
 /wiki/Iowa_State_University /wiki/Flagship
+
 /wiki/Iowa_State_University /wiki/Land-grant_university
+
 /wiki/Iowa_State_University /wiki/Space_grant_colleges
+
 /wiki/Iowa_State_University /wiki/Ames,_Iowa
+
 /wiki/Iowa_State_University /wiki/Iowa
+
 /wiki/Iowa_State_University /wiki/Carnegie_Classification_of_Institutions_of_Higher_Education
+
 /wiki/Iowa_State_University /wiki/Carnegie_Foundation_for_the_Advancement_of_Teaching
+
 /wiki/Iowa_State_University /wiki/Association_of_American_Universities
+
 /wiki/Iowa_State_University /wiki/Coeducational
+
 /wiki/Iowa_State_University /wiki/Iowa_Legislature
+
 /wiki/Iowa_State_University /wiki/Morrill_Land-Grant_Colleges_Act
+
 .....
+
 .....
+
 .....
+
 3
+
 
 The first line tells that there is a link from page /wiki/Iowa State University to the page /wiki/Flagship. All other methods of the
 class must be private.
