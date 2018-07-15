@@ -39,14 +39,12 @@ WikiCrawler.  parameters to the constructor are
 1. A string seedUrl{relative address of the seed url (within Wiki domain).
 2. An integer max representing Maximum number pages to be crawled.
 3. An array list of keywords called topics. The keywords describe a particular topic.
-4. A string fileName representing name of a le{The graph will be written to this file
+4. A string fileName representing name of a file{The graph will be written to this file extractLinks(String doc). This method gets a string (that represents contents of a .html file) as parameter. This method should return an array list (of Strings) consisting of links from doc. Type of this method is ArrayList<String>. We assume that the html page is  the source (html) code of a wiki page.
 
-extractLinks(String doc). This method gets a string (that represents contents of a .html file) as parameter. This method should return
-an array list (of Strings) consisting of links from doc. Type of this method is ArrayList<String>. We assume that the html page is 
-the source (html) code of a wiki page. This method will
+This method will
 
 1. Extract only wiki links. I.e. only links that are of form /wiki/XXXXX.
-Only extract links that appear after the first occurrence of the html tag<p> (or <P>).
+Only extract links that appear after the first occurrence of the html tag <p> or (<P>).
 2. not extract any wiki link that contain the characters \#" or \:".
 3. The order in which the links in the returned array list will be exactly the same order in which they appear in doc.
 
