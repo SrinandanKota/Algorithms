@@ -33,7 +33,10 @@ A web search engine is designed to crawl the web to collect material from all we
 WikiCrawler
 
 This class will have methods that can be used to crawl Wiki. This class will have following constructor and methods.
-WikiCrawler.  parameters to the constructor are
+
+WikiCrawler.  
+
+Parameters to the constructor are
 
 1. A string seedUrl{relative address of the seed url (within Wiki domain).
 2. An integer max representing Maximum number pages to be crawled.
@@ -42,9 +45,7 @@ WikiCrawler.  parameters to the constructor are
 
 This method will
 
-1. Extract only wiki links. I.e. only links that are of form /wiki/XXXXX.
-Only extract links that appear after the first occurrence of the html tag
-<p> or (<P>).
+1. Extract only wiki links. I.e. only links that are of form /wiki/XXXXX. Only extract links that appear after the first occurrence of the html tag for indicating a pargaraph.
 2. not extract any wiki link that contain the characters \#" or \:".
 3. The order in which the links in the returned array list will be exactly the same order in which they appear in doc.
 
@@ -66,7 +67,7 @@ w.crawl();
 This program will start crawling with /wiki/Iowa State University as the root page. It will collect the first 100 pages that contain
 both the words \Iowa State" and "Cyclones" that are visited by a BFS algorithm. Determines the graph (links among the those 100 pages)
 and writes the graph to a (text) file named WikiISU.txt. This file will contain all edges of the graph. Each line of this file will
-have one directed edge, except the first line. The first line of the graph should indicate number of vertices which will be 100. Below 
+have one directed edge, except the first line. The first line of the graph will indicate number of vertices which will be 100. Below 
 is sample contents of the file
 
 100
@@ -103,5 +104,5 @@ is sample contents of the file
 
 
 The first line tells that there is a link from page /wiki/Iowa State University to the page /wiki/Flagship. All other methods of the
-class must be private.
+class are private.
 
