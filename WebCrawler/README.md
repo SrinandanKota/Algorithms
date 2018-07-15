@@ -10,7 +10,7 @@ BFS algorithm :
 2. Initialize a Queue Q and a list visited.
 3. Place root in Q and visited.
 4. while Q is not empty Do
-(a) Let v be the rst element of Q.
+(a) Let v be the first element of Q.
 (b) For every edge hv; ui 2 E DO
       If u =2 visited add u to the end of Q, and add u to visited.
 If you output the vertices in visited, that will be BFS traversal of the input graph. We can use BFS algorithm on web graph also. Here,
@@ -21,7 +21,7 @@ Here is the BFS algorithm on Web graph.
 2. Initialize a Queue Q and a list visited.
 3. Place seed url in Q and visited.
 4. while Q is not empty Do
-(a) Let currentP age be the rst element of Q.
+(a) Let currentP age be the first element of Q.
 (b) Send a request to server at currentP age and download currentP age.
 (c) Extract all links from currentP age.
 (d) For every link u that appears in currentP age
@@ -29,9 +29,7 @@ Here is the BFS algorithm on Web graph.
 
 This will visit all the pages that are reachable from the seed url.
 
-A web search engine is designed to crawl the web to collect material from all web pages. While doing this, the the search engine will also
-construct the web graph. The structure of this graph is critical in determining the pages that are relevant to a query.This part contains a
-program to focus on crawling the web and constructing a web graph. The program will crawl 200 web pages and only wiki pages
+A web search engine is designed to crawl the web to collect material from all web pages. While doing this, the the search engine will also construct the web graph. The structure of this graph is critical in determining the pages that are relevant to a query.This part contains a program to focus on crawling the web and constructing a web graph. The program will crawl 200 web pages and only wiki pages
 
 WikiCrawler
 
@@ -48,7 +46,7 @@ an array list (of Strings) consisting of links from doc. Type of this method is 
 the source (html) code of a wiki page. This method will
 
 1. Extract only wiki links. I.e. only links that are of form /wiki/XXXXX.
-Only extract links that appear after the first occurrence of the html tag <p> (or <P>).
+Only extract links that appear after the first occurrence of the html tag<p> (or <P>).
 2. not extract any wiki link that contain the characters \#" or \:".
 3. The order in which the links in the returned array list will be exactly the same order in which they appear in doc.
 
