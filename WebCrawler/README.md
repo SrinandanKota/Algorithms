@@ -44,7 +44,7 @@ WikiCrawler.  parameters to the constructor are
 This method will
 
 1. Extract only wiki links. I.e. only links that are of form /wiki/XXXXX.
-Only extract links that appear after the first occurrence of the html tag <p> or (<P>).
+Only extract links that appear after the first occurrence of the html tag "<p>" or "(<P>)".
 2. not extract any wiki link that contain the characters \#" or \:".
 3. The order in which the links in the returned array list will be exactly the same order in which they appear in doc.
 
