@@ -104,5 +104,8 @@ is sample contents of the file
 
 
 The first line tells that there is a link from page /wiki/Iowa State University to the page /wiki/Flagship. All other methods of the
-class are private.
+class are private. 
+
+This program crawls the wiki pages with /wiki/Computer Science as seedUrl, 200 as max, and empty list as topics. The constructed graph
+is written to a file named WikiCS.txt in the way described above in the examples.
 
