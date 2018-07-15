@@ -7,7 +7,7 @@ This implementation contains the following classes-
 2) WarWithHash
 3) WarWithRollHash
 
-An unknown DNA sequence U is provided about which you would like to find some information. You are given a set S of n strings, and each string has length exactly k such that S is the set of all 2 k-length substrings of U. Now the goal is to construct a set T such that T is the set of all 2k-length substrings of U. Input is S: A set of k-length substrings of U and output is T|set of all 2k-length substrings of U.
+An unknown DNA sequence U is provided about which you would like to find some information. You are given a set S of n strings, and each string has length exactly k such that S is the set of all 2 k-length substrings of U. Now the goal is to construct a set T such that T is the set of all 2k-length substrings of U. Input is S: A set of k-length substrings of U and output is T is a set of all 2k-length substrings of U.
 
 Classes:
 
