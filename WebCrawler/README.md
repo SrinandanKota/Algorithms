@@ -5,7 +5,7 @@ page p contains a link to page q. We can the model web as a directed graph. Ever
 
 BFS algorithm : 
 
-1. Input: Directed Graph G = (V;E), and root E V .
+1. Input: Directed Graph G = (V;E), and root belongs to V .
 2. Initialize a Queue Q and a list visited.
 3. Place root in Q and visited.
 4. while Q is not empty Do
@@ -15,11 +15,10 @@ BFS algorithm :
 If you output the vertices in visited, that will be BFS traversal of the input graph. We can use BFS algorithm on web graph also. Here,
 the input to the algorithm is a seed url (instead of entire web graph). View that page as the the root for the BFS traversal. 
 Here is the BFS algorithm on Web graph.
-
-1. Input: seed url
-2. Initialize a Queue Q and a list visited.
-3. Place seed url in Q and visited.
-4. while Q is not empty Do
+1) Input: seed url
+2) Initialize a Queue Q and a list visited.
+3) Place seed url in Q and visited.
+4) while Q is not empty Do
 (a) Let currentP age be the first element of Q.
 (b) Send a request to server at currentP age and download currentP age.
 (c) Extract all links from currentP age.
@@ -45,8 +44,8 @@ Parameters to the constructor are
 
 This method will
 
-1. Extract only wiki links. I.e. only links that are of form /wiki/XXXXX. Only extract links that appear after the first occurrence of the html tag for indicating a pargaraph.
-2. not extract any wiki link that contain the characters \#" or \:".
+1. Extract only wiki links. i.e. only links that are of form /wiki/XXXXX. Only extract links that appear after the first occurrence of the html tag for indicating a pargaraph.
+2. not extract any wiki link that contain the characters "#" or ":".
 3. The order in which the links in the returned array list will be exactly the same order in which they appear in doc.
 
 For example, if doc looks like the attached file (sample.txt), then the returned list is-
@@ -65,7 +64,7 @@ WikiCrawler w = new WikiCrawler("/wiki/Iowa_State_University", 100, topics, "Wik
 w.crawl();
 
 This program will start crawling with /wiki/Iowa State University as the root page. It will collect the first 100 pages that contain
-both the words \Iowa State" and "Cyclones" that are visited by a BFS algorithm. Determines the graph (links among the those 100 pages)
+both the words "Iowa State" and "Cyclones" that are visited by a BFS algorithm. Determines the graph (links among the those 100 pages)
 and writes the graph to a (text) file named WikiISU.txt. This file will contain all edges of the graph. Each line of this file will
 have one directed edge, except the first line. The first line of the graph will indicate number of vertices which will be 100. Below 
 is sample contents of the file
