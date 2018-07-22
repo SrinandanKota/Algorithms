@@ -28,12 +28,7 @@ WarWithRollHash
 
 This class will also contain a method to compute T.This class must have following constructor and method - WarWithRollHash(String[] s, int k ). s is the set of all k-length substrings of U.
 
-compute2k() - This method returns an arraylist of 2k-length strings which is the set of all 2k-length substrings of U. Return type of this method must be ArrayList<String> .
-  
-A brief report that includes the following.
-Pseudo code of method compute2k() from - 
-1. WarWithArray
-2. WarWithHash
-3. WarWithRollHash
+compute2k() - This method returns an arraylist of 2k-length strings which is the set of all 2k-length substrings of U. Return type of this method must be ArrayList<String>.
+
 
 All the codes are included in this folder. 
